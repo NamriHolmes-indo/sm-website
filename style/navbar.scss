@@ -1,0 +1,79 @@
+@import "utils";
+
+nav {
+  width: 100vw;
+  background-color: #0f1d22;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    // h1 {
+    //   color: transparent;
+    //   -webkit-text-stroke-width: 4px;
+    //   -webkit-text-stroke-color: #f1b417;
+
+    //   text-stroke-width: 1px;
+    //   text-stroke-color: #f1b417;
+
+    //   font-family: "Palanquin Dark";
+    //   font-size: 3rem;
+    //   font-style: normal;
+    //   font-weight: 600;
+    //   line-height: normal;
+    //   margin: 0px;
+    // }
+
+    img {
+      height: 5vh;
+      width: auto;
+    }
+  }
+
+  .info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .info-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        height: 3vh;
+      }
+
+      p {
+        font-family: Montserrat;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0px;
+        color: white;
+      }
+    }
+  }
+
+  .tombol-masuk {
+    border: 1px solid #be8900;
+    padding: 10px 15px;
+
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0px;
+    color: #be8900;
+    border-radius: 5px;
+  }
+}

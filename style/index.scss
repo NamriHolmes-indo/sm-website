@@ -1,0 +1,15 @@
+@import "utils";
+
+html {
+  width: 100vw;
+  padding: 0px;
+  margin: 0px;
+
+  body {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+
+    @import "header-home";
+  }
+}

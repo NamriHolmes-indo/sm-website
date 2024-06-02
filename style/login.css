@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Lugrasimo&family=Mochiy+Pop+One&family=Montserrat+Alternates:ital,wght@0,600;0,700;1,700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600&family=Nerko+One&family=Poppins:wght@200;300;400;500;600;700&family=Potta+One&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+html body {
+  margin: 0px;
+  padding: 0px;
+}
+
+html body main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+html body main .kanan {
+  flex: 1;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../asset/logres.jpg");
+  background-color: #cccccc;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transform: rotate(180deg);
+  filter: brightness(0.75);
+}
+html body main .kiri {
+  flex: 1;
+}
+html body main .kiri h1 {
+  color: #000;
+  font-family: Righteous;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+html body main .kiri form {
+  width: 100%;
+  box-sizing: border-box;
+}/*# sourceMappingURL=login.css.map */
