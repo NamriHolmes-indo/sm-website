@@ -72,6 +72,9 @@ html body {
   width: 100%;
   padding: 0px;
   margin: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
 }
 html body header {
   width: 100wv;
@@ -128,4 +131,58 @@ html body header .header-container a {
   border-radius: 5px;
   text-decoration: none;
   margin-top: 20px;
+}
+html body main {
+  width: 100vw;
+  margin: 0px;
+}
+html body main .fast-menu {
+  width: 100%;
+  background-color: #0f1d22;
+  padding: 50px 5%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body main .fast-menu h1 {
+  color: #f1b417;
+  font-family: Montserrat;
+  font-size: 4rem;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  margin: 10px;
+}
+html body main .fast-menu .menu-container {
+  width: 100%;
+  display: flex;
+  max-width: 1440px;
+}
+html body main .fast-menu .menu-container .fast-menu-card {
+  width: 20%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body main .fast-menu .menu-container .fast-menu-card img {
+  height: 20%;
+  max-height: 150px;
+  width: auto;
+}
+html body main .fast-menu .menu-container .fast-menu-card p {
+  color: #f1b417;
+  font-family: Poppins;
+  font-size: 1.2rem;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
 }/*# sourceMappingURL=index.css.map */

@@ -2,10 +2,24 @@
 
 html {
   body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     main {
-      width: 100vw;
-      height: 100vh;
+      width: 70vw;
+      height: 80vh;
       display: flex;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
+
+      @media only screen and (max-width: $medium-screen) {
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+      }
 
       .kanan {
         flex: 1;
@@ -22,6 +36,11 @@ html {
         position: relative;
         transform: rotate(180deg);
         filter: brightness(0.75);
+
+        @media only screen and (max-width: $medium-screen) {
+          flex: 2;
+          width: 100vw;
+        }
       }
 
       .kiri {
@@ -31,8 +50,16 @@ html {
         align-items: center;
         flex-direction: column;
 
+        @media only screen and (max-width: $medium-screen) {
+          flex: 8;
+          width: 100vw;
+        }
+
         .form-container {
           width: 80%;
+          @media only screen and (max-width: $medium-screen) {
+            width: 90vw;
+          }
           h1 {
             color: #000;
             font-family: Righteous;
@@ -42,11 +69,13 @@ html {
             line-height: normal;
             margin: 0px;
             margin-bottom: 20px;
+            @media only screen and (max-width: $medium-screen) {
+              font-size: 2rem;
+              width: 100%;
+            }
           }
 
           form {
-            box-sizing: border-box;
-
             .input-container {
               width: 100%;
 
@@ -66,6 +95,10 @@ html {
                 font-weight: 500;
                 line-height: normal;
                 border-radius: 10px;
+
+                @media only screen and (max-width: $medium-screen) {
+                  font-size: 0.8rem;
+                }
               }
             }
 
@@ -86,6 +119,11 @@ html {
                 line-height: normal;
                 border-radius: 5px;
                 margin-top: 50px;
+
+                @media only screen and (max-width: $medium-screen) {
+                  font-size: 0.8rem;
+                  padding: 10px 20px;
+                }
               }
               input[type="submit"] {
                 background-color: #00ff1a;
@@ -122,6 +160,34 @@ html {
                   margin: 0px;
                 }
               }
+              .regis {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 80%;
+                gap: 10px;
+
+                font-family: Montserrat;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                border-radius: 10px;
+
+                a {
+                  color: #ff0000;
+                }
+
+                @media only screen and (max-width: $medium-screen) {
+                  p,
+                  a {
+                    font-size: 0.8rem;
+                  }
+                }
+              }
+            }
+            .regis {
+              display: flex;
             }
           }
         }
@@ -142,6 +208,14 @@ html {
 
           a {
             color: #ff0000;
+          }
+
+          @media only screen and (max-width: $medium-screen) {
+            gap: 1px;
+            p,
+            a {
+              font-size: 0.8rem;
+            }
           }
         }
       }

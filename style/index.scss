@@ -9,7 +9,68 @@ html {
     width: 100%;
     padding: 0px;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
 
     @import "header-home";
+
+    main {
+      width: 100vw;
+      margin: 0px;
+      .fast-menu {
+        width: 100%;
+        background-color: #0f1d22;
+        padding: 50px 5%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+          color: #f1b417;
+          font-family: Montserrat;
+          font-size: 4rem;
+          text-align: center;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-decoration: none;
+          margin: 10px;
+        }
+
+        .menu-container {
+          width: 100%;
+          display: flex;
+          max-width: 1440px;
+
+          .fast-menu-card {
+            width: 20%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              height: 20%;
+              max-height: 150px;
+              width: auto;
+            }
+            p {
+              color: #f1b417;
+              font-family: Poppins;
+              font-size: 1.2rem;
+              text-align: center;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
   }
 }

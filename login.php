@@ -39,6 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sederhana Jaya</title>
   <link rel="stylesheet" href="style/logreg.css" />
+  <meta http-equiv="refresh" content="5">
 </head>
 
 <body>
